@@ -1,0 +1,11 @@
+# Keep source files consistent across Windows and Unix checkouts.
+* text=auto eol=lf
+
+# Preserve binary project references, reports, presentations, and figures.
+*.docx binary
+*.pptx binary
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.svg text eol=lf

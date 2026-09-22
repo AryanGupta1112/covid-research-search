@@ -1,0 +1,30 @@
+{
+  "name": "covid-research-search",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"python scripts/serve.py\" \"vite --host 127.0.0.1 --port 5173\"",
+    "frontend": "vite --host 127.0.0.1 --port 5173",
+    "backend": "python scripts/serve.py",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4173",
+    "demo": "concurrently \"python scripts/serve.py --demo\" \"vite --host 127.0.0.1 --port 5173\"",
+    "evaluate": "python scripts/evaluate.py",
+    "test:retrieval": "python -m unittest discover -s tests -v",
+    "test:ui": "node scripts/check_ui.cjs"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^5.0.3",
+    "concurrently": "^9.2.1",
+    "lucide-react": "^0.544.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "recharts": "^3.2.1",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.7"
+  },
+  "devDependencies": {
+    "playwright": "^1.64.1"
+  }
+}

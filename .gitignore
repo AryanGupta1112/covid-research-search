@@ -1,0 +1,34 @@
+# JavaScript dependencies and builds
+node_modules/
+dist/
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Downloaded datasets, embeddings, and generated working artifacts
+/data/
+/artifacts/*
+!/artifacts/experiment/
+.chart-data-*/
+
+# Local design-tool state and implementation prompts
+/.impeccable/
+/prompt.txt
+
+# Local secrets and configuration
+.env
+.env.*
+!.env.example
+
+# Temporary files and application lock files
+*.log
+~$*
+~WR*.tmp
+.DS_Store
+Thumbs.db
