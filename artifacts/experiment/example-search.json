@@ -1,0 +1,159 @@
+{
+  "query": "coronavirus transmission in children",
+  "method": "hybrid",
+  "results": [
+    {
+      "rank": 1,
+      "docId": "e4y3wjvg",
+      "title": "Laboratory-Confirmed Human Coronavirus Infections Among Children: Does Type Matter?",
+      "snippet": "",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7117591/",
+      "score": 0.04745,
+      "signals": {
+        "tfidfRank": 7,
+        "bm25Rank": 2,
+        "denseRank": 1
+      }
+    },
+    {
+      "rank": 2,
+      "docId": "rlebw9ez",
+      "title": "Coronavirus HKU1 in Children, Brazil, 1995",
+      "snippet": "",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3358201/",
+      "score": 0.04583,
+      "signals": {
+        "tfidfRank": 6,
+        "bm25Rank": 1,
+        "denseRank": 10
+      }
+    },
+    {
+      "rank": 3,
+      "docId": "7mfedn03",
+      "title": "Coronavirus Infections",
+      "snippet": "",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7151918/",
+      "score": 0.04065,
+      "signals": {
+        "tfidfRank": 1,
+        "bm25Rank": 63,
+        "denseRank": 2
+      }
+    },
+    {
+      "rank": 4,
+      "docId": "29wzpwvr",
+      "title": "Coronavirus",
+      "snippet": "Name of Virus: Coronavirus",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7124098/",
+      "score": 0.03958,
+      "signals": {
+        "tfidfRank": 3,
+        "bm25Rank": 28,
+        "denseRank": 21
+      }
+    },
+    {
+      "rank": 5,
+      "docId": "kh21pnbw",
+      "title": "New coronavirus",
+      "snippet": "",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7097347/",
+      "score": 0.03946,
+      "signals": {
+        "tfidfRank": 2,
+        "bm25Rank": 59,
+        "denseRank": 7
+      }
+    },
+    {
+      "rank": 6,
+      "docId": "cpp5zzgx",
+      "title": "Coronavirus, Infection and Immunity",
+      "snippet": "",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7150173/",
+      "score": 0.03859,
+      "signals": {
+        "tfidfRank": 4,
+        "bm25Rank": 81,
+        "denseRank": 3
+      }
+    },
+    {
+      "rank": 7,
+      "docId": "8vsp3ksj",
+      "title": "Novel coronavirus spreads",
+      "snippet": "",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7097263/",
+      "score": 0.0374,
+      "signals": {
+        "tfidfRank": 5,
+        "bm25Rank": 73,
+        "denseRank": 9
+      }
+    },
+    {
+      "rank": 8,
+      "docId": "z8o7tdta",
+      "title": "Coronavirus controversy",
+      "snippet": "",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7097223/",
+      "score": 0.03707,
+      "signals": {
+        "tfidfRank": 12,
+        "bm25Rank": 58,
+        "denseRank": 8
+      }
+    },
+    {
+      "rank": 9,
+      "docId": "g207b8oo",
+      "title": "Syndrome respiratoire aigu s\u00e9v\u00e8re : \u00e0 propos d'un cas de transmission indirecte du Coronavirus",
+      "snippet": "",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7131535/",
+      "score": 0.03629,
+      "signals": {
+        "tfidfRank": 58,
+        "bm25Rank": 4,
+        "denseRank": 22
+      }
+    },
+    {
+      "rank": 10,
+      "docId": "5ntp8ssg",
+      "title": "Is Aerosol-Based Transmission of Middle East Respiratory Syndrome Coronavirus Possible?",
+      "snippet": "",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7107389/",
+      "score": 0.03616,
+      "signals": {
+        "tfidfRank": 21,
+        "bm25Rank": 3,
+        "denseRank": 66
+      }
+    }
+  ],
+  "modelSummaries": [
+    {
+      "method": "tfidf",
+      "topScore": 0.59044,
+      "candidates": 1993
+    },
+    {
+      "method": "bm25",
+      "topScore": 12.67711,
+      "candidates": 1993
+    },
+    {
+      "method": "dense",
+      "topScore": 0.78197,
+      "candidates": 20000
+    },
+    {
+      "method": "hybrid",
+      "topScore": 0.04745,
+      "candidates": 20000
+    }
+  ],
+  "denseEngine": "SentenceTransformer all-MiniLM-L6-v2 across all indexed documents"
+}

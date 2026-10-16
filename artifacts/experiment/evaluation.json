@@ -1,0 +1,1728 @@
+{
+  "experimentId": "024ac8ffbc9b667bf50f",
+  "generatedAt": "2026-11-03T14:31:55.670958+00:00",
+  "dataset": "BEIR TREC-COVID / CORD-19",
+  "indexedDocuments": 20000,
+  "corpusDocuments": 171332,
+  "totalQueries": 50,
+  "evaluatedQueries": 50,
+  "queriesWithRelevantInIndex": 47,
+  "skippedQueries": [],
+  "denseEngine": "SentenceTransformer all-MiniLM-L6-v2 across all indexed documents",
+  "assignmentReady": true,
+  "modelRevision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "evaluationScope": "Original qrels; all judged queries; missing corpus documents remain in relevance denominators",
+  "mapScope": "Full returned rankings; sparse lists contain all documents with a matching query term; dense ranks every indexed document; RRF fuses complete lists",
+  "precisionRecallDefinition": "Macro-averaged 11-point interpolated precision at fixed recall levels",
+  "comparison": [
+    {
+      "method": "tfidf",
+      "precisionAt10": 0.058,
+      "recallAt100": 0.003222,
+      "map": 0.00122,
+      "ndcgAt10": 0.051184
+    },
+    {
+      "method": "bm25",
+      "precisionAt10": 0.1,
+      "recallAt100": 0.005501,
+      "map": 0.00189,
+      "ndcgAt10": 0.072378
+    },
+    {
+      "method": "dense",
+      "precisionAt10": 0.08,
+      "recallAt100": 0.005382,
+      "map": 0.001742,
+      "ndcgAt10": 0.070707
+    },
+    {
+      "method": "hybrid",
+      "precisionAt10": 0.08,
+      "recallAt100": 0.005742,
+      "map": 0.001826,
+      "ndcgAt10": 0.068359
+    }
+  ],
+  "precisionRecall": [
+    {
+      "recall": 0.0,
+      "tfidf": 0.218411,
+      "bm25": 0.345857,
+      "dense": 0.297973,
+      "hybrid": 0.324137
+    },
+    {
+      "recall": 0.1,
+      "tfidf": 0.0,
+      "bm25": 0.0,
+      "dense": 0.0,
+      "hybrid": 0.0
+    },
+    {
+      "recall": 0.2,
+      "tfidf": 0.0,
+      "bm25": 0.0,
+      "dense": 0.0,
+      "hybrid": 0.0
+    },
+    {
+      "recall": 0.3,
+      "tfidf": 0.0,
+      "bm25": 0.0,
+      "dense": 0.0,
+      "hybrid": 0.0
+    },
+    {
+      "recall": 0.4,
+      "tfidf": 0.0,
+      "bm25": 0.0,
+      "dense": 0.0,
+      "hybrid": 0.0
+    },
+    {
+      "recall": 0.5,
+      "tfidf": 0.0,
+      "bm25": 0.0,
+      "dense": 0.0,
+      "hybrid": 0.0
+    },
+    {
+      "recall": 0.6,
+      "tfidf": 0.0,
+      "bm25": 0.0,
+      "dense": 0.0,
+      "hybrid": 0.0
+    },
+    {
+      "recall": 0.7,
+      "tfidf": 0.0,
+      "bm25": 0.0,
+      "dense": 0.0,
+      "hybrid": 0.0
+    },
+    {
+      "recall": 0.8,
+      "tfidf": 0.0,
+      "bm25": 0.0,
+      "dense": 0.0,
+      "hybrid": 0.0
+    },
+    {
+      "recall": 0.9,
+      "tfidf": 0.0,
+      "bm25": 0.0,
+      "dense": 0.0,
+      "hybrid": 0.0
+    },
+    {
+      "recall": 1.0,
+      "tfidf": 0.0,
+      "bm25": 0.0,
+      "dense": 0.0,
+      "hybrid": 0.0
+    }
+  ],
+  "perQuery": [
+    {
+      "queryId": "1",
+      "query": "what is the origin of COVID-19",
+      "relevantDocuments": 644,
+      "relevantInIndex": 15,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.003105590062111801,
+          "map": 0.00021729727941257267,
+          "ndcgAt10": 0.0
+        },
+        "bm25": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 0.00018548365808217733,
+          "ndcgAt10": 0.0
+        },
+        "dense": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0015527950310559005,
+          "map": 0.0003022765311895202,
+          "ndcgAt10": 0.0
+        },
+        "hybrid": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 0.00032245906679210357,
+          "ndcgAt10": 0.0
+        }
+      }
+    },
+    {
+      "queryId": "2",
+      "query": "how does the coronavirus respond to changes in the weather",
+      "relevantDocuments": 317,
+      "relevantInIndex": 11,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 0.00022971017572441025,
+          "ndcgAt10": 0.0
+        },
+        "bm25": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.006309148264984227,
+          "map": 0.0006008781808488579,
+          "ndcgAt10": 0.0
+        },
+        "dense": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0031545741324921135,
+          "map": 0.0006193372007836028,
+          "ndcgAt10": 0.0
+        },
+        "hybrid": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.006309148264984227,
+          "map": 0.0005573803953870352,
+          "ndcgAt10": 0.0
+        }
+      }
+    },
+    {
+      "queryId": "3",
+      "query": "will SARS-CoV2 infected people develop immunity? Is cross protection possible?",
+      "relevantDocuments": 635,
+      "relevantInIndex": 20,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.1,
+          "recallAt100": 0.006299212598425197,
+          "map": 0.0008661785091284833,
+          "ndcgAt10": 0.026132756326225113
+        },
+        "bm25": {
+          "precisionAt10": 0.1,
+          "recallAt100": 0.004724409448818898,
+          "map": 0.0019611102278185677,
+          "ndcgAt10": 0.07336392209936006
+        },
+        "dense": {
+          "precisionAt10": 0.1,
+          "recallAt100": 0.007874015748031496,
+          "map": 0.0012506079535559874,
+          "ndcgAt10": 0.028381039213873666
+        },
+        "hybrid": {
+          "precisionAt10": 0.1,
+          "recallAt100": 0.009448818897637795,
+          "map": 0.0030480996638848137,
+          "ndcgAt10": 0.07336392209936006
+        }
+      }
+    },
+    {
+      "queryId": "4",
+      "query": "what causes death from Covid-19?",
+      "relevantDocuments": 540,
+      "relevantInIndex": 3,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 2.8607060770803458e-05,
+          "ndcgAt10": 0.0
+        },
+        "bm25": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.001851851851851852,
+          "map": 7.319295338818204e-05,
+          "ndcgAt10": 0.0
+        },
+        "dense": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 7.250955439445768e-06,
+          "ndcgAt10": 0.0
+        },
+        "hybrid": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 3.4300013002370346e-05,
+          "ndcgAt10": 0.0
+        }
+      }
+    },
+    {
+      "queryId": "5",
+      "query": "what drugs have been active against SARS-CoV or SARS-CoV-2 in animal studies?",
+      "relevantDocuments": 618,
+      "relevantInIndex": 6,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.1,
+          "recallAt100": 0.003236245954692557,
+          "map": 0.0003722462389277641,
+          "ndcgAt10": 0.024454640699786683
+        },
+        "bm25": {
+          "precisionAt10": 0.2,
+          "recallAt100": 0.003236245954692557,
+          "map": 0.0024523096701291854,
+          "ndcgAt10": 0.16815228646891087
+        },
+        "dense": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.003236245954692557,
+          "map": 0.0002691846653163164,
+          "ndcgAt10": 0.0
+        },
+        "hybrid": {
+          "precisionAt10": 0.1,
+          "recallAt100": 0.003236245954692557,
+          "map": 0.0018838128684299197,
+          "ndcgAt10": 0.07336392209936006
+        }
+      }
+    },
+    {
+      "queryId": "6",
+      "query": "what types of rapid testing for Covid-19 have been developed?",
+      "relevantDocuments": 969,
+      "relevantInIndex": 21,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0010319917440660474,
+          "map": 0.00024522781108542207,
+          "ndcgAt10": 0.0
+        },
+        "bm25": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.005159958720330237,
+          "map": 0.0005682679481792609,
+          "ndcgAt10": 0.0
+        },
+        "dense": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0030959752321981426,
+          "map": 0.0002537508094361223,
+          "ndcgAt10": 0.0
+        },
+        "hybrid": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0020639834881320948,
+          "map": 0.00040536393144386404,
+          "ndcgAt10": 0.0
+        }
+      }
+    },
+    {
+      "queryId": "7",
+      "query": "are there serological tests that detect antibodies to coronavirus?",
+      "relevantDocuments": 485,
+      "relevantInIndex": 16,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.004123711340206186,
+          "map": 0.0006507394933759454,
+          "ndcgAt10": 0.0
+        },
+        "bm25": {
+          "precisionAt10": 0.2,
+          "recallAt100": 0.016494845360824743,
+          "map": 0.0035380040158770137,
+          "ndcgAt10": 0.13842692236291376
+        },
+        "dense": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.004123711340206186,
+          "map": 0.0006097151028610079,
+          "ndcgAt10": 0.0
+        },
+        "hybrid": {
+          "precisionAt10": 0.1,
+          "recallAt100": 0.008247422680412371,
+          "map": 0.001804716166329345,
+          "ndcgAt10": 0.11004588314904008
+        }
+      }
+    },
+    {
+      "queryId": "8",
+      "query": "how has lack of testing availability led to underreporting of true incidence of Covid-19?",
+      "relevantDocuments": 639,
+      "relevantInIndex": 5,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.001564945226917058,
+          "map": 5.922847357845101e-05,
+          "ndcgAt10": 0.0
+        },
+        "bm25": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.001564945226917058,
+          "map": 4.824937265696074e-05,
+          "ndcgAt10": 0.0
+        },
+        "dense": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.001564945226917058,
+          "map": 9.335680176021957e-05,
+          "ndcgAt10": 0.0
+        },
+        "hybrid": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.001564945226917058,
+          "map": 9.483385334734253e-05,
+          "ndcgAt10": 0.0
+        }
+      }
+    },
+    {
+      "queryId": "9",
+      "query": "how has COVID-19 affected Canada",
+      "relevantDocuments": 195,
+      "relevantInIndex": 5,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.2,
+          "recallAt100": 0.010256410256410256,
+          "map": 0.007831899769751495,
+          "ndcgAt10": 0.314880130667631
+        },
+        "bm25": {
+          "precisionAt10": 0.1,
+          "recallAt100": 0.010256410256410256,
+          "map": 0.006169445504517213,
+          "ndcgAt10": 0.22009176629808017
+        },
+        "dense": {
+          "precisionAt10": 0.1,
+          "recallAt100": 0.005128205128205128,
+          "map": 0.0026870235247495383,
+          "ndcgAt10": 0.13886244387355454
+        },
+        "hybrid": {
+          "precisionAt10": 0.1,
+          "recallAt100": 0.010256410256410256,
+          "map": 0.005952738858028294,
+          "ndcgAt10": 0.22009176629808017
+        }
+      }
+    },
+    {
+      "queryId": "10",
+      "query": "has social distancing had an impact on slowing the spread of COVID-19?",
+      "relevantDocuments": 481,
+      "relevantInIndex": 5,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.008316008316008316,
+          "map": 0.0009922221460682999,
+          "ndcgAt10": 0.0
+        },
+        "bm25": {
+          "precisionAt10": 0.4,
+          "recallAt100": 0.010395010395010396,
+          "map": 0.006906906906906906,
+          "ndcgAt10": 0.1701171837558816
+        },
+        "dense": {
+          "precisionAt10": 0.1,
+          "recallAt100": 0.006237006237006237,
+          "map": 0.0008342763942288533,
+          "ndcgAt10": 0.028381039213873666
+        },
+        "hybrid": {
+          "precisionAt10": 0.3,
+          "recallAt100": 0.010395010395010396,
+          "map": 0.003066314506992473,
+          "ndcgAt10": 0.09142182315178937
+        }
+      }
+    },
+    {
+      "queryId": "11",
+      "query": "what are the guidelines for triaging patients infected with coronavirus?",
+      "relevantDocuments": 421,
+      "relevantInIndex": 11,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 7.943763932812324e-05,
+          "ndcgAt10": 0.0
+        },
+        "bm25": {
+          "precisionAt10": 0.1,
+          "recallAt100": 0.004750593824228029,
+          "map": 0.0006006556408523152,
+          "ndcgAt10": 0.024454640699786683
+        },
+        "dense": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.004750593824228029,
+          "map": 0.0003064233236215076,
+          "ndcgAt10": 0.0
+        },
+        "hybrid": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.004750593824228029,
+          "map": 0.00033428189707737654,
+          "ndcgAt10": 0.0
+        }
+      }
+    },
+    {
+      "queryId": "12",
+      "query": "what are best practices in hospitals and at home in maintaining quarantine?",
+      "relevantDocuments": 627,
+      "relevantInIndex": 31,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.6,
+          "recallAt100": 0.019138755980861243,
+          "map": 0.011601670263000467,
+          "ndcgAt10": 0.452371922240065
+        },
+        "bm25": {
+          "precisionAt10": 0.2,
+          "recallAt100": 0.022328548644338118,
+          "map": 0.0054673356938776015,
+          "ndcgAt10": 0.06943122193677727
+        },
+        "dense": {
+          "precisionAt10": 0.4,
+          "recallAt100": 0.019138755980861243,
+          "map": 0.00813648643855973,
+          "ndcgAt10": 0.25090421593923556
+        },
+        "hybrid": {
+          "precisionAt10": 0.5,
+          "recallAt100": 0.022328548644338118,
+          "map": 0.01165330083114436,
+          "ndcgAt10": 0.35224321213952087
+        }
+      }
+    },
+    {
+      "queryId": "13",
+      "query": "what are the transmission routes of coronavirus?",
+      "relevantDocuments": 878,
+      "relevantInIndex": 18,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.1,
+          "recallAt100": 0.003416856492027335,
+          "map": 0.0006490019913650985,
+          "ndcgAt10": 0.028381039213873666
+        },
+        "bm25": {
+          "precisionAt10": 0.1,
+          "recallAt100": 0.00683371298405467,
+          "map": 0.0008412380296531313,
+          "ndcgAt10": 0.022084741151463014
+        },
+        "dense": {
+          "precisionAt10": 0.1,
+          "recallAt100": 0.002277904328018223,
+          "map": 0.00040410709539107575,
+          "ndcgAt10": 0.028381039213873666
+        },
+        "hybrid": {
+          "precisionAt10": 0.1,
+          "recallAt100": 0.003416856492027335,
+          "map": 0.0008935686652568733,
+          "ndcgAt10": 0.03668196104968003
+        }
+      }
+    },
+    {
+      "queryId": "14",
+      "query": "what evidence is there related to COVID-19 super spreaders",
+      "relevantDocuments": 259,
+      "relevantInIndex": 15,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 0.0001392101024385623,
+          "ndcgAt10": 0.0
+        },
+        "bm25": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.003861003861003861,
+          "map": 0.00039138528143087443,
+          "ndcgAt10": 0.0
+        },
+        "dense": {
+          "precisionAt10": 0.1,
+          "recallAt100": 0.011583011583011582,
+          "map": 0.0010348179467425788,
+          "ndcgAt10": 0.024454640699786683
+        },
+        "hybrid": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.003861003861003861,
+          "map": 0.0005062950335602451,
+          "ndcgAt10": 0.0
+        }
+      }
+    },
+    {
+      "queryId": "15",
+      "query": "how long can the coronavirus live outside the body",
+      "relevantDocuments": 423,
+      "relevantInIndex": 20,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.002364066193853428,
+          "map": 0.00015136677816919526,
+          "ndcgAt10": 0.0
+        },
+        "bm25": {
+          "precisionAt10": 0.1,
+          "recallAt100": 0.004728132387706856,
+          "map": 0.0015903323039822936,
+          "ndcgAt10": 0.046287481291184845
+        },
+        "dense": {
+          "precisionAt10": 0.2,
+          "recallAt100": 0.004728132387706856,
+          "map": 0.00357113905130167,
+          "ndcgAt10": 0.09949667842558517
+        },
+        "hybrid": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.004728132387706856,
+          "map": 0.0005853230407715323,
+          "ndcgAt10": 0.0
+        }
+      }
+    },
+    {
+      "queryId": "16",
+      "query": "how long does coronavirus remain stable  on surfaces?",
+      "relevantDocuments": 387,
+      "relevantInIndex": 10,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 0.0001752400821432216,
+          "ndcgAt10": 0.0
+        },
+        "bm25": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 0.00012368164077951378,
+          "ndcgAt10": 0.0
+        },
+        "dense": {
+          "precisionAt10": 0.1,
+          "recallAt100": 0.007751937984496124,
+          "map": 0.0013190386936757523,
+          "ndcgAt10": 0.031596121456516926
+        },
+        "hybrid": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.002583979328165375,
+          "map": 0.0002911791579054187,
+          "ndcgAt10": 0.0
+        }
+      }
+    },
+    {
+      "queryId": "17",
+      "query": "are there any clinical trials available for the coronavirus",
+      "relevantDocuments": 673,
+      "relevantInIndex": 2,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 6.425432629899951e-06,
+          "ndcgAt10": 0.0
+        },
+        "bm25": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 6.742452498308148e-06,
+          "ndcgAt10": 0.0
+        },
+        "dense": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 4.321480738035058e-06,
+          "ndcgAt10": 0.0
+        },
+        "hybrid": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 7.288123791497782e-06,
+          "ndcgAt10": 0.0
+        }
+      }
+    },
+    {
+      "queryId": "18",
+      "query": "what are the best masks for preventing infection by Covid-19?",
+      "relevantDocuments": 632,
+      "relevantInIndex": 24,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.011075949367088608,
+          "map": 0.002120738407896986,
+          "ndcgAt10": 0.0
+        },
+        "bm25": {
+          "precisionAt10": 0.5,
+          "recallAt100": 0.0189873417721519,
+          "map": 0.009556998384756703,
+          "ndcgAt10": 0.32950543660687687
+        },
+        "dense": {
+          "precisionAt10": 0.7,
+          "recallAt100": 0.0189873417721519,
+          "map": 0.012764984637075677,
+          "ndcgAt10": 0.44790404946398377
+        },
+        "hybrid": {
+          "precisionAt10": 0.3,
+          "recallAt100": 0.022151898734177215,
+          "map": 0.007694985580328818,
+          "ndcgAt10": 0.19010316119749796
+        }
+      }
+    },
+    {
+      "queryId": "19",
+      "query": "what type of hand sanitizer is needed to destroy Covid-19?",
+      "relevantDocuments": 113,
+      "relevantInIndex": 9,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.1,
+          "recallAt100": 0.008849557522123894,
+          "map": 0.009411202323511251,
+          "ndcgAt10": 0.07336392209936006
+        },
+        "bm25": {
+          "precisionAt10": 0.2,
+          "recallAt100": 0.017699115044247787,
+          "map": 0.011306542375022507,
+          "ndcgAt10": 0.09544866325082307
+        },
+        "dense": {
+          "precisionAt10": 0.1,
+          "recallAt100": 0.035398230088495575,
+          "map": 0.011404655045168847,
+          "ndcgAt10": 0.07336392209936006
+        },
+        "hybrid": {
+          "precisionAt10": 0.1,
+          "recallAt100": 0.035398230088495575,
+          "map": 0.010666112853627825,
+          "ndcgAt10": 0.07336392209936006
+        }
+      }
+    },
+    {
+      "queryId": "20",
+      "query": "are patients taking Angiotensin-converting enzyme inhibitors (ACE) at increased risk for COVID-19?",
+      "relevantDocuments": 705,
+      "relevantInIndex": 19,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.2,
+          "recallAt100": 0.011347517730496455,
+          "map": 0.0027267349183401307,
+          "ndcgAt10": 0.16006937327320508
+        },
+        "bm25": {
+          "precisionAt10": 0.2,
+          "recallAt100": 0.01276595744680851,
+          "map": 0.0031017312386642684,
+          "ndcgAt10": 0.16006937327320508
+        },
+        "dense": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.014184397163120567,
+          "map": 0.002367712815739058,
+          "ndcgAt10": 0.0
+        },
+        "hybrid": {
+          "precisionAt10": 0.2,
+          "recallAt100": 0.015602836879432624,
+          "map": 0.0036931573540876935,
+          "ndcgAt10": 0.12316940358342446
+        }
+      }
+    },
+    {
+      "queryId": "21",
+      "query": "what are the mortality rates overall and in specific populations",
+      "relevantDocuments": 636,
+      "relevantInIndex": 3,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0015723270440251573,
+          "map": 2.0158039025963555e-05,
+          "ndcgAt10": 0.0
+        },
+        "bm25": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0015723270440251573,
+          "map": 3.4940600978336826e-05,
+          "ndcgAt10": 0.0
+        },
+        "dense": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 1.9006675465410024e-06,
+          "ndcgAt10": 0.0
+        },
+        "hybrid": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0015723270440251573,
+          "map": 2.1330832772867278e-05,
+          "ndcgAt10": 0.0
+        }
+      }
+    },
+    {
+      "queryId": "22",
+      "query": "are cardiac complications likely in patients with COVID-19?",
+      "relevantDocuments": 558,
+      "relevantInIndex": 6,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 8.932577368225359e-05,
+          "ndcgAt10": 0.0
+        },
+        "bm25": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0035842293906810036,
+          "map": 0.00020920415606675896,
+          "ndcgAt10": 0.0
+        },
+        "dense": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0035842293906810036,
+          "map": 0.00011871076671248623,
+          "ndcgAt10": 0.0
+        },
+        "hybrid": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0017921146953405018,
+          "map": 0.00014941454678941355,
+          "ndcgAt10": 0.0
+        }
+      }
+    },
+    {
+      "queryId": "23",
+      "query": "what kinds of complications related to COVID-19 are associated with hypertension?",
+      "relevantDocuments": 380,
+      "relevantInIndex": 3,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 2.7293492368438177e-05,
+          "ndcgAt10": 0.0
+        },
+        "bm25": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 2.3159316800154394e-05,
+          "ndcgAt10": 0.0
+        },
+        "dense": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 1.6358260005611545e-05,
+          "ndcgAt10": 0.0
+        },
+        "hybrid": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 2.9225941477393278e-05,
+          "ndcgAt10": 0.0
+        }
+      }
+    },
+    {
+      "queryId": "24",
+      "query": "what kinds of complications related to COVID-19 are associated with diabetes",
+      "relevantDocuments": 408,
+      "relevantInIndex": 0,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 0.0,
+          "ndcgAt10": 0.0
+        },
+        "bm25": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 0.0,
+          "ndcgAt10": 0.0
+        },
+        "dense": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 0.0,
+          "ndcgAt10": 0.0
+        },
+        "hybrid": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 0.0,
+          "ndcgAt10": 0.0
+        }
+      }
+    },
+    {
+      "queryId": "25",
+      "query": "which biomarkers predict the severe clinical course of 2019-nCOV infection?",
+      "relevantDocuments": 535,
+      "relevantInIndex": 1,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 2.4433449392217943e-06,
+          "ndcgAt10": 0.0
+        },
+        "bm25": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 5.3252389700987835e-06,
+          "ndcgAt10": 0.0
+        },
+        "dense": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 1.9369522057043242e-07,
+          "ndcgAt10": 0.0
+        },
+        "hybrid": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 2.363032716187956e-06,
+          "ndcgAt10": 0.0
+        }
+      }
+    },
+    {
+      "queryId": "26",
+      "query": "what are the initial symptoms of Covid-19?",
+      "relevantDocuments": 794,
+      "relevantInIndex": 4,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 5.2917892597845185e-06,
+          "ndcgAt10": 0.0
+        },
+        "bm25": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 4.630315602311453e-06,
+          "ndcgAt10": 0.0
+        },
+        "dense": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0012594458438287153,
+          "map": 7.937001528621954e-05,
+          "ndcgAt10": 0.0
+        },
+        "hybrid": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 3.5811847962643685e-05,
+          "ndcgAt10": 0.0
+        }
+      }
+    },
+    {
+      "queryId": "27",
+      "query": "what is known about those infected with Covid-19 but are asymptomatic?",
+      "relevantDocuments": 849,
+      "relevantInIndex": 6,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.3,
+          "recallAt100": 0.004711425206124852,
+          "map": 0.003188543572188196,
+          "ndcgAt10": 0.43735247915031006
+        },
+        "bm25": {
+          "precisionAt10": 0.3,
+          "recallAt100": 0.004711425206124852,
+          "map": 0.0028758206368820075,
+          "ndcgAt10": 0.42257499837058643
+        },
+        "dense": {
+          "precisionAt10": 0.2,
+          "recallAt100": 0.004711425206124852,
+          "map": 0.0025268204956222875,
+          "ndcgAt10": 0.3589542101716347
+        },
+        "hybrid": {
+          "precisionAt10": 0.2,
+          "recallAt100": 0.005889281507656066,
+          "map": 0.00280241044290727,
+          "ndcgAt10": 0.3589542101716347
+        }
+      }
+    },
+    {
+      "queryId": "28",
+      "query": "what evidence is there for the value of hydroxychloroquine in treating Covid-19?",
+      "relevantDocuments": 556,
+      "relevantInIndex": 4,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0017985611510791368,
+          "map": 7.150566268489321e-05,
+          "ndcgAt10": 0.0
+        },
+        "bm25": {
+          "precisionAt10": 0.1,
+          "recallAt100": 0.0035971223021582736,
+          "map": 0.000533639022847656,
+          "ndcgAt10": 0.07336392209936006
+        },
+        "dense": {
+          "precisionAt10": 0.1,
+          "recallAt100": 0.00539568345323741,
+          "map": 0.0023103276218553715,
+          "ndcgAt10": 0.22009176629808017
+        },
+        "hybrid": {
+          "precisionAt10": 0.1,
+          "recallAt100": 0.0035971223021582736,
+          "map": 0.0004454565282004915,
+          "ndcgAt10": 0.0636207881989517
+        }
+      }
+    },
+    {
+      "queryId": "29",
+      "query": "which SARS-CoV-2 proteins-human proteins interactions indicate potential for drug targets. Are there approved drugs that can be repurposed based on this information?",
+      "relevantDocuments": 609,
+      "relevantInIndex": 8,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.1,
+          "recallAt100": 0.008210180623973728,
+          "map": 0.0008116499962036517,
+          "ndcgAt10": 0.024454640699786683
+        },
+        "bm25": {
+          "precisionAt10": 0.2,
+          "recallAt100": 0.008210180623973728,
+          "map": 0.0017280095627360884,
+          "ndcgAt10": 0.07074212199097153
+        },
+        "dense": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.003284072249589491,
+          "map": 0.00040547549927435925,
+          "ndcgAt10": 0.0
+        },
+        "hybrid": {
+          "precisionAt10": 0.2,
+          "recallAt100": 0.009852216748768473,
+          "map": 0.00146905068996824,
+          "ndcgAt10": 0.0578888904493306
+        }
+      }
+    },
+    {
+      "queryId": "30",
+      "query": "is remdesivir an effective treatment for COVID-19",
+      "relevantDocuments": 373,
+      "relevantInIndex": 1,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.1,
+          "recallAt100": 0.002680965147453083,
+          "map": 0.0013404825737265416,
+          "ndcgAt10": 0.13886244387355454
+        },
+        "bm25": {
+          "precisionAt10": 0.1,
+          "recallAt100": 0.002680965147453083,
+          "map": 0.002680965147453083,
+          "ndcgAt10": 0.22009176629808017
+        },
+        "dense": {
+          "precisionAt10": 0.1,
+          "recallAt100": 0.002680965147453083,
+          "map": 0.002680965147453083,
+          "ndcgAt10": 0.22009176629808017
+        },
+        "hybrid": {
+          "precisionAt10": 0.1,
+          "recallAt100": 0.002680965147453083,
+          "map": 0.002680965147453083,
+          "ndcgAt10": 0.22009176629808017
+        }
+      }
+    },
+    {
+      "queryId": "31",
+      "query": "How does the coronavirus differ from seasonal flu?",
+      "relevantDocuments": 354,
+      "relevantInIndex": 23,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 0.000711452466837502,
+          "ndcgAt10": 0.0
+        },
+        "bm25": {
+          "precisionAt10": 0.2,
+          "recallAt100": 0.011299435028248588,
+          "map": 0.0023555094503425714,
+          "ndcgAt10": 0.04566157009943725
+        },
+        "dense": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.011299435028248588,
+          "map": 0.002646763539807039,
+          "ndcgAt10": 0.0
+        },
+        "hybrid": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.011299435028248588,
+          "map": 0.0019928402041961718,
+          "ndcgAt10": 0.0
+        }
+      }
+    },
+    {
+      "queryId": "32",
+      "query": "Does SARS-CoV-2 have any subtypes, and if so what are they?",
+      "relevantDocuments": 221,
+      "relevantInIndex": 0,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 0.0,
+          "ndcgAt10": 0.0
+        },
+        "bm25": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 0.0,
+          "ndcgAt10": 0.0
+        },
+        "dense": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 0.0,
+          "ndcgAt10": 0.0
+        },
+        "hybrid": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 0.0,
+          "ndcgAt10": 0.0
+        }
+      }
+    },
+    {
+      "queryId": "33",
+      "query": "What vaccine candidates are being tested for Covid-19?",
+      "relevantDocuments": 284,
+      "relevantInIndex": 2,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 3.5830395767797956e-05,
+          "ndcgAt10": 0.0
+        },
+        "bm25": {
+          "precisionAt10": 0.1,
+          "recallAt100": 0.0035211267605633804,
+          "map": 0.0007122279129321383,
+          "ndcgAt10": 0.028381039213873666
+        },
+        "dense": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0035211267605633804,
+          "map": 0.00010102322733163389,
+          "ndcgAt10": 0.0
+        },
+        "hybrid": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0035211267605633804,
+          "map": 0.0003068666451636025,
+          "ndcgAt10": 0.0
+        }
+      }
+    },
+    {
+      "queryId": "34",
+      "query": "What are the longer-term complications of those who recover from COVID-19?",
+      "relevantDocuments": 179,
+      "relevantInIndex": 1,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 0.0,
+          "ndcgAt10": 0.0
+        },
+        "bm25": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 0.0,
+          "ndcgAt10": 0.0
+        },
+        "dense": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 3.248018708587761e-05,
+          "ndcgAt10": 0.0
+        },
+        "hybrid": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 1.0481411217206284e-05,
+          "ndcgAt10": 0.0
+        }
+      }
+    },
+    {
+      "queryId": "35",
+      "query": "What new public datasets are available related to COVID-19?",
+      "relevantDocuments": 222,
+      "relevantInIndex": 1,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 3.478381856760235e-06,
+          "ndcgAt10": 0.0
+        },
+        "bm25": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 3.2903612158542767e-06,
+          "ndcgAt10": 0.0
+        },
+        "dense": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 2.321909538404384e-06,
+          "ndcgAt10": 0.0
+        },
+        "hybrid": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 2.979169645836312e-06,
+          "ndcgAt10": 0.0
+        }
+      }
+    },
+    {
+      "queryId": "36",
+      "query": "What is the protein structure of the SARS-CoV-2 spike?",
+      "relevantDocuments": 615,
+      "relevantInIndex": 2,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.2,
+          "recallAt100": 0.0032520325203252032,
+          "map": 0.0011743450767841012,
+          "ndcgAt10": 0.16094718502501754
+        },
+        "bm25": {
+          "precisionAt10": 0.1,
+          "recallAt100": 0.0032520325203252032,
+          "map": 0.0010043041606886658,
+          "ndcgAt10": 0.046287481291184845
+        },
+        "dense": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0032520325203252032,
+          "map": 0.00024301873453517144,
+          "ndcgAt10": 0.0
+        },
+        "hybrid": {
+          "precisionAt10": 0.2,
+          "recallAt100": 0.0032520325203252032,
+          "map": 0.0009485094850948508,
+          "ndcgAt10": 0.10999439043519227
+        }
+      }
+    },
+    {
+      "queryId": "37",
+      "query": "What is the result of phylogenetic analysis of SARS-CoV-2 genome sequence?",
+      "relevantDocuments": 450,
+      "relevantInIndex": 1,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 8.514261387824605e-06,
+          "ndcgAt10": 0.0
+        },
+        "bm25": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 1.277139208173691e-05,
+          "ndcgAt10": 0.0
+        },
+        "dense": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 5.473453749315818e-06,
+          "ndcgAt10": 0.0
+        },
+        "hybrid": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 9.107468123861566e-06,
+          "ndcgAt10": 0.0
+        }
+      }
+    },
+    {
+      "queryId": "38",
+      "query": "What is the mechanism of inflammatory response and pathogenesis of COVID-19 cases?",
+      "relevantDocuments": 1269,
+      "relevantInIndex": 21,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0007880220646178094,
+          "map": 0.0003043663008939844,
+          "ndcgAt10": 0.0
+        },
+        "bm25": {
+          "precisionAt10": 0.1,
+          "recallAt100": 0.005516154452324665,
+          "map": 0.0007916537687179278,
+          "ndcgAt10": 0.023143740645592423
+        },
+        "dense": {
+          "precisionAt10": 0.1,
+          "recallAt100": 0.002364066193853428,
+          "map": 0.00028748903094354345,
+          "ndcgAt10": 0.0636207881989517
+        },
+        "hybrid": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0031520882584712374,
+          "map": 0.0004996711487592881,
+          "ndcgAt10": 0.0
+        }
+      }
+    },
+    {
+      "queryId": "39",
+      "query": "What is the mechanism of cytokine storm syndrome on the COVID-19?",
+      "relevantDocuments": 862,
+      "relevantInIndex": 19,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.1,
+          "recallAt100": 0.0034802784222737818,
+          "map": 0.0008113228407099888,
+          "ndcgAt10": 0.03668196104968003
+        },
+        "bm25": {
+          "precisionAt10": 0.3,
+          "recallAt100": 0.0069605568445475635,
+          "map": 0.003891166998342656,
+          "ndcgAt10": 0.141642004605557
+        },
+        "dense": {
+          "precisionAt10": 0.2,
+          "recallAt100": 0.004640371229698376,
+          "map": 0.0014722400732470322,
+          "ndcgAt10": 0.07466852050505851
+        },
+        "hybrid": {
+          "precisionAt10": 0.1,
+          "recallAt100": 0.008120649651972157,
+          "map": 0.002110620120632369,
+          "ndcgAt10": 0.07336392209936006
+        }
+      }
+    },
+    {
+      "queryId": "40",
+      "query": "What are the observed mutations in the SARS-CoV-2 genome and how often do the mutations occur?",
+      "relevantDocuments": 558,
+      "relevantInIndex": 6,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0035842293906810036,
+          "map": 0.0002994297914441551,
+          "ndcgAt10": 0.0
+        },
+        "bm25": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0017921146953405018,
+          "map": 0.00010815926407324257,
+          "ndcgAt10": 0.0
+        },
+        "dense": {
+          "precisionAt10": 0.2,
+          "recallAt100": 0.0035842293906810036,
+          "map": 0.0009324983065188997,
+          "ndcgAt10": 0.16421958630632805
+        },
+        "hybrid": {
+          "precisionAt10": 0.1,
+          "recallAt100": 0.0035842293906810036,
+          "map": 0.0004775590286419683,
+          "ndcgAt10": 0.07839826897867534
+        }
+      }
+    },
+    {
+      "queryId": "41",
+      "query": "What are the impacts of COVID-19 among African-Americans that differ from the rest of the U.S. population?",
+      "relevantDocuments": 313,
+      "relevantInIndex": 2,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 0.0,
+          "ndcgAt10": 0.0
+        },
+        "bm25": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 0.0,
+          "ndcgAt10": 0.0
+        },
+        "dense": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.003194888178913738,
+          "map": 0.00015541602199460657,
+          "ndcgAt10": 0.0
+        },
+        "hybrid": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 2.0995156915349876e-05,
+          "ndcgAt10": 0.0
+        }
+      }
+    },
+    {
+      "queryId": "42",
+      "query": "Does Vitamin D impact COVID-19 prevention and treatment?",
+      "relevantDocuments": 243,
+      "relevantInIndex": 3,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 3.0038148448529632e-05,
+          "ndcgAt10": 0.0
+        },
+        "bm25": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.00411522633744856,
+          "map": 0.00015827793605571383,
+          "ndcgAt10": 0.0
+        },
+        "dense": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.00411522633744856,
+          "map": 5.5629904873789104e-05,
+          "ndcgAt10": 0.0
+        },
+        "hybrid": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.00411522633744856,
+          "map": 7.796813211627239e-05,
+          "ndcgAt10": 0.0
+        }
+      }
+    },
+    {
+      "queryId": "43",
+      "query": "How has the COVID-19 pandemic impacted violence in society, including violent crimes?",
+      "relevantDocuments": 253,
+      "relevantInIndex": 2,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.1,
+          "recallAt100": 0.003952569169960474,
+          "map": 0.003981847460108329,
+          "ndcgAt10": 0.22009176629808017
+        },
+        "bm25": {
+          "precisionAt10": 0.1,
+          "recallAt100": 0.007905138339920948,
+          "map": 0.004055233304245162,
+          "ndcgAt10": 0.22009176629808017
+        },
+        "dense": {
+          "precisionAt10": 0.1,
+          "recallAt100": 0.003952569169960474,
+          "map": 0.003955588703321789,
+          "ndcgAt10": 0.22009176629808017
+        },
+        "hybrid": {
+          "precisionAt10": 0.1,
+          "recallAt100": 0.003952569169960474,
+          "map": 0.003991703518177905,
+          "ndcgAt10": 0.22009176629808017
+        }
+      }
+    },
+    {
+      "queryId": "44",
+      "query": "How much impact do masks have on preventing the spread of the COVID-19?",
+      "relevantDocuments": 486,
+      "relevantInIndex": 13,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.1,
+          "recallAt100": 0.01440329218106996,
+          "map": 0.0042294591568952915,
+          "ndcgAt10": 0.07336392209936006
+        },
+        "bm25": {
+          "precisionAt10": 0.4,
+          "recallAt100": 0.024691358024691357,
+          "map": 0.011083466651869173,
+          "ndcgAt10": 0.3668622577194034
+        },
+        "dense": {
+          "precisionAt10": 0.4,
+          "recallAt100": 0.018518518518518517,
+          "map": 0.006797969343241711,
+          "ndcgAt10": 0.3169161923094836
+        },
+        "hybrid": {
+          "precisionAt10": 0.4,
+          "recallAt100": 0.024691358024691357,
+          "map": 0.00919277813990594,
+          "ndcgAt10": 0.27991746799335265
+        }
+      }
+    },
+    {
+      "queryId": "45",
+      "query": "How has the COVID-19 pandemic impacted mental health?",
+      "relevantDocuments": 812,
+      "relevantInIndex": 2,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.2,
+          "recallAt100": 0.0024630541871921183,
+          "map": 0.0015833919774806472,
+          "ndcgAt10": 0.09781856279914673
+        },
+        "bm25": {
+          "precisionAt10": 0.2,
+          "recallAt100": 0.0024630541871921183,
+          "map": 0.0017241379310344827,
+          "ndcgAt10": 0.10174496131323373
+        },
+        "dense": {
+          "precisionAt10": 0.2,
+          "recallAt100": 0.0024630541871921183,
+          "map": 0.0024630541871921183,
+          "ndcgAt10": 0.1196514033905449
+        },
+        "hybrid": {
+          "precisionAt10": 0.2,
+          "recallAt100": 0.0024630541871921183,
+          "map": 0.0024630541871921183,
+          "ndcgAt10": 0.1196514033905449
+        }
+      }
+    },
+    {
+      "queryId": "46",
+      "query": "what evidence is there for dexamethasone as a treatment for COVID-19?",
+      "relevantDocuments": 189,
+      "relevantInIndex": 5,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 0.0001503380989382263,
+          "ndcgAt10": 0.0
+        },
+        "bm25": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 0.00011614854816716982,
+          "ndcgAt10": 0.0
+        },
+        "dense": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.005291005291005291,
+          "map": 0.00033853792524124086,
+          "ndcgAt10": 0.0
+        },
+        "hybrid": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 0.000302824001299219,
+          "ndcgAt10": 0.0
+        }
+      }
+    },
+    {
+      "queryId": "47",
+      "query": "what are the health outcomes for children who contract COVID-19?",
+      "relevantDocuments": 428,
+      "relevantInIndex": 6,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.2,
+          "recallAt100": 0.004672897196261682,
+          "map": 0.0015982998890785713,
+          "ndcgAt10": 0.1799314820111718
+        },
+        "bm25": {
+          "precisionAt10": 0.2,
+          "recallAt100": 0.004672897196261682,
+          "map": 0.001593669392467959,
+          "ndcgAt10": 0.1799314820111718
+        },
+        "dense": {
+          "precisionAt10": 0.2,
+          "recallAt100": 0.004672897196261682,
+          "map": 0.0047661526670388105,
+          "ndcgAt10": 0.3589542101716347
+        },
+        "hybrid": {
+          "precisionAt10": 0.2,
+          "recallAt100": 0.004672897196261682,
+          "map": 0.002821786158619285,
+          "ndcgAt10": 0.2489083270225946
+        }
+      }
+    },
+    {
+      "queryId": "48",
+      "query": "what are the benefits and risks of re-opening schools in the midst of the COVID-19 pandemic?",
+      "relevantDocuments": 448,
+      "relevantInIndex": 13,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.1,
+          "recallAt100": 0.004464285714285714,
+          "map": 0.0016358054622738164,
+          "ndcgAt10": 0.11004588314904008
+        },
+        "bm25": {
+          "precisionAt10": 0.2,
+          "recallAt100": 0.015625,
+          "map": 0.003029567509200023,
+          "ndcgAt10": 0.16094718502501754
+        },
+        "dense": {
+          "precisionAt10": 0.2,
+          "recallAt100": 0.015625,
+          "map": 0.006310705859989808,
+          "ndcgAt10": 0.266379247589265
+        },
+        "hybrid": {
+          "precisionAt10": 0.2,
+          "recallAt100": 0.015625,
+          "map": 0.004644758647415935,
+          "ndcgAt10": 0.2432355069436726
+        }
+      }
+    },
+    {
+      "queryId": "49",
+      "query": "do individuals who recover from COVID-19 show sufficient immune response, including antibody levels and T-cell mediated immunity, to prevent re-infection?",
+      "relevantDocuments": 251,
+      "relevantInIndex": 0,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 0.0,
+          "ndcgAt10": 0.0
+        },
+        "bm25": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 0.0,
+          "ndcgAt10": 0.0
+        },
+        "dense": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 0.0,
+          "ndcgAt10": 0.0
+        },
+        "hybrid": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.0,
+          "map": 0.0,
+          "ndcgAt10": 0.0
+        }
+      }
+    },
+    {
+      "queryId": "50",
+      "query": "what is known about an mRNA vaccine for the SARS-CoV-2 virus?",
+      "relevantDocuments": 144,
+      "relevantInIndex": 4,
+      "metrics": {
+        "tfidf": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.006944444444444444,
+          "map": 0.0003246461877029991,
+          "ndcgAt10": 0.0
+        },
+        "bm25": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.006944444444444444,
+          "map": 0.00028200323170740794,
+          "ndcgAt10": 0.0
+        },
+        "dense": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.006944444444444444,
+          "map": 0.000159064539965414,
+          "ndcgAt10": 0.0
+        },
+        "hybrid": {
+          "precisionAt10": 0.0,
+          "recallAt100": 0.006944444444444444,
+          "map": 0.0003112750777642724,
+          "ndcgAt10": 0.0
+        }
+      }
+    }
+  ]
+}
