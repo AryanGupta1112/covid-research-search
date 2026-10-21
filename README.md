@@ -18,7 +18,7 @@ npm run dev
 
 Open http://127.0.0.1:5173. The API runs at http://127.0.0.1:8000; API documentation is at http://127.0.0.1:8000/docs.
 
-On this machine, the base Python already has the transformer dependencies and MiniLM model cache. The backend launcher reuses those installed dependencies when the active virtual environment lacks them; no reinstall is necessary in that case. A cold model import can take some time.
+If the active virtual environment lacks dependencies but its base Python already has them, the backend launcher can reuse that installation. A fresh checkout still needs the dependencies above, the dataset download, and the MiniLM model. Initial downloads and encoding can take time; datasets and caches are excluded from Git.
 
 The first transformer run encodes every indexed title and abstract and saves a checkpoint every 256 papers. Subsequent runs reuse `data/cache/minilm-*.npy`. Interrupted indexing resumes automatically. Model revision, corpus contents, and input configuration identify each embedding cache. Query vectors are cached in memory. Evaluation is cached separately and invalidated when implementation or experiment inputs change.
 
@@ -64,9 +64,40 @@ npm run demo
 
 This uses deterministic term vectors and displays a warning. It does **not** meet the assignment's Sentence Transformer requirement. The assignment evaluation exporter refuses to publish these scores as transformer results.
 
-## Report
+## Report and presentation
 
-`Project_7_COVID_Research_Report.docx` is the completed eight-page Project 7 report, made from the supplied template with actual experiment results, two application screenshots, a workflow, and the PR graph. Student identity cells remain blank for completion. The original `IR_report formatt.docx` is unchanged. Supporting experiment data remains under `artifacts/experiment`.
+`Project_7_COVID_Research_Report.docx` is the ten-page report based on the supplied format. It includes actual experiment results, two application screenshots, a workflow, a worked RRF example, query coverage analysis, and the PR graph. `Project_7_COVID_Research_Presentation.pptx` contains ten slides using the approved MUJ presentation theme. Both deliverables identify Aryan Gupta, Shashwat Rana, and Rudra Pratap Singh; the presentation names Prof. Prashant Vats. The original `IR_report formatt.docx` remains unchanged.
+
+The assignment deck specifies a similarity threshold below 10%, while the supplied report template says below 15%. The completed report follows the stricter assignment threshold. Actual plagiarism/similarity compliance requires an independent checker; a threshold printed in a document is not a measured result. The report's ten-page length follows the requested expansion.
+
+## Assignment coverage and measured results
+
+Project 7 requirements are in slide 9 of `Information Retrieval Project Assignments.pptx`, with shared evaluation and submission requirements in slides 2 and 24.
+
+| Requirement | Project evidence |
+| --- | --- |
+| TREC-COVID / CORD-19 indexing and preprocessing | `backend/app/search_engine.py`: text cleaning, tokenization, stop-word removal, simple suffix stemming, postings and embeddings |
+| TF-IDF, BM25, Sentence Transformer, Hybrid RRF | Independent full-index dense retrieval and complete-list fusion with k=60 |
+| Precision@10, Recall, MAP, nDCG | P@10, R@100, full-ranking MAP and nDCG@10 against original qrels |
+| Interactive interface, comparison table and PR graph | React application with four-model comparison and 11-point interpolated PR curves |
+| Technical report and working demonstration | Report and presentation above; `npm run dev` for the live application |
+
+The saved experiment is `024ac8ffbc9b667bf50f`, generated on 3 November 2026, with 20,000 of 171,332 papers and all 50 judged queries. Supporting JSON, CSV and PR figures are under `artifacts/experiment`.
+
+| Model | P@10 | R@100 | MAP | nDCG@10 |
+| --- | ---: | ---: | ---: | ---: |
+| TF-IDF | 0.058000 | 0.003222 | 0.001220 | 0.051184 |
+| BM25 | **0.100000** | 0.005501 | **0.001890** | **0.072378** |
+| Sentence Transformer | 0.080000 | 0.005382 | 0.001742 | 0.070707 |
+| Hybrid RRF | 0.080000 | **0.005742** | 0.001826 | 0.068359 |
+
+BM25 leads on three metrics; RRF leads on Recall@100. These results describe the declared subset. The assignment does not specify a minimum corpus size, and a full-corpus experiment remains a separate extension.
+
+## Verification
+
+`npm run test:retrieval` runs ten ranking and metric reference tests. `npm run build` checks the production frontend build. With the normal application running, use `npm run test:ui` for Playwright checks of five viewport sizes, all four live rankers, keyboard search, downloads, validation, empty results and retry recovery. Chrome or Edge must be installed. Use real transformer mode for the assignment checks.
+
+`PRODUCT.md` (including a lowercase `product.md` variant) and `PROJECT_FULL_EXPLANATION.md` are local working notes excluded from future Git tracking. The README contains the setup, requirements and experiment information needed by repository readers.
 
 ## Data and methods
 
