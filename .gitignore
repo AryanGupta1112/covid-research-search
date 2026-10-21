@@ -21,6 +21,11 @@ htmlcov/
 /.impeccable/
 /prompt.txt
 
+# Local project planning and explanation notes
+/product.md
+/PRODUCT.md
+/PROJECT_FULL_EXPLANATION.md
+
 # Local secrets and configuration
 .env
 .env.*
