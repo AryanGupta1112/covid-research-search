@@ -12,6 +12,7 @@
     "demo": "concurrently \"python scripts/serve.py --demo\" \"vite --host 127.0.0.1 --port 5173\"",
     "evaluate": "python scripts/evaluate.py",
     "test:retrieval": "python -m unittest discover -s tests -v",
+    "test:startup": "python -m unittest discover -s tests -p test_startup.py -v && node tests/test_dev_watcher.mjs",
     "test:ui": "node scripts/check_ui.cjs"
   },
   "dependencies": {
